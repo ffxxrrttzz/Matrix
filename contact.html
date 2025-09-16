@@ -318,29 +318,29 @@
                             <h3> Send us a message </h3>
                             <p>Quisque vitae volutpat leo. Cras scelerisque dignissim diam, nec auctor nisl pretium eu. Sed vulputate leo ac porta eleifend. Pellentesque semper convallis lacus, </p>
                         </div>
-                        <form method="post" action="sendemail.php" id="contact-form"> 
+                        <form method="POST" id="contact-form">
                             <div class="row clearfix">
                                 <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                                    <input type="text" name="username" placeholder="Your Name" required="">
+                                    <input type="text" name="username" placeholder="Your Name" required>
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                                    <input type="email" name="email" placeholder="Your email" required="">
+                                    <input type="email" name="email" placeholder="Your email" required>
                                 </div>
                                 <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                                    <input type="text" name="url" placeholder="Your Name" required="">
+                                    <input type="text" name="subject" placeholder="Subject" required> <!-- изменил placeholder -->
                                 </div>
                                 <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                                    <textarea name="message" placeholder="Message"></textarea>
+                                    <textarea name="message" placeholder="Message" required></textarea>
                                 </div>
                                 <div class="col-lg-12 col-md-12 col-sm-12 form-group">
                                     <div class="check-box">
-                                        <input class="check" type="checkbox" id="checkbox">
+                                        <input class="check" type="checkbox" id="checkbox" required>
                                         <label for="checkbox">Save my name, email, and website in this browser for the next time I comment. *</label>
                                     </div>
                                 </div>
                                 <div class="col-lg-12 col-md-12 col-sm-12 form-group message-btn mr-0">
                                     <div class="more__buttons"> 
-                                        <button class="btn-1" type="submit" name="submit-form">Send Message <span></span></button>
+                                        <button class="btn-1" type="submit" name="submit-form">Send Message</button>
                                     </div>
                                 </div>
                             </div>
@@ -468,6 +468,7 @@
     <script src="assets/js/jquery.nice-select.min.js"></script>
     <script src="assets/js/jquery-ui.js"></script>
     <script src="assets/js/parallax-scroll.js"></script>
+    <script src="assets/js/contact-form.js"></script>
 
     <!-- main-js -->
     <script src="assets/js/script.js"></script>
